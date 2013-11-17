@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/global.css">
+    </head>
+    <body class="main_body">
+		<div class="inner_body">
+			<!--[if lt IE 8]>
+				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
+			<h1>Contact Form</h1>
+			<!-- Add your site or application content here -->
+			<p>Please fill in your details below, noting fields with an asterik are mandatory. Thank You</p>
+
+			<!-- no need for Action as the form is returning to self -->
+			<form method="GET" onSubmit="return checkEnquiryType();" name="testForm">
+				First name * <input type="text" name="firstName" required="" />
+				<br />
+				Surname * <input type="text" name="surname" required="" />
+				<br />
+				Email address * <input type="email" name="emailAddress" required="" />
+				<br />
+				Daytime contact number * <input type="tel" name="contactNumber" required="" />
+				<br />
+				Address * <input type="text" name="address" required="" />
+				<br />	
+				Suburb * <input type="text" name="suburb" required="" />
+				<br />
+				State * 
+				<select name="state" required="">
+					<option value="Select">Select</option>
+					<option value="ACT">ACT</option>
+					<option value="NSW">NSW</option>
+					<option value="NT">NT</option>
+					<option value="QLD">QLD</option>
+					<option value="SA">SA</option>
+					<option value="TAS">TAS</option>
+					<option value="VIC">VIC</option>
+					<option value="WA">WA</option>
+				</select>
+				<br />
+				Postcode * <input type="text" name="postcode" required="" />
+				<br />				
+				Enquiry type *
+				<select name="enquiryType" required="">
+					<option value="Select">Select</option>
+					<option value="generalEnquiry">General Enquiry</option>
+					<option value="productFeedbackEnquiry">Product Feedback or Enquiry</option>
+					<option value="productComplaint">Product Complaint</option>
+				</select>
+				<br />
+				Product name <input type="text" name="productName" />
+				<br />
+				Product size <input type="text" name="productSize" />
+				<br />
+				Use-by date <input type="text" name="useByDate" />
+				<br />
+				Batch code <input type="text" name="batchCode" />
+				<br />
+				Enquiry <textarea cols="40" rows="2" name="enquiry"></textarea>
+				<br />
+				<input type="submit" name="Submit" />
+
+			</form>
+
+			<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->
+			<script src="js/plugins.js"></script>
+			
+			<script src="js/main.js"></script>
+			<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+			<script>
+				(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+				function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+				e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+				e.src='//www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+				ga('create','UA-XXXXX-X');ga('send','pageview');
+			</script> -->
+		</div>
+    </body>
+</html>

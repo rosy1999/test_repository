@@ -1,0 +1,5 @@
+.main_body { margin: auto; width: 935px; background-color: #e6e6e6; padding:20px 0 20px 0;  font-family: arial; font-size: 13px; }
+.inner_body { background-color: #fff; padding: 20px; border:2px solid #999; border-radius:15px; box-shadow: 7px 7px 7px #888; }
+
+h1 { font-size: 18px; }
+input, select, textarea { margin: 8px; }
