@@ -24,20 +24,20 @@
 
 			<!-- no need for Action as the form is returning to self -->
 			<form method="GET" onSubmit="return checkEnquiryType();" name="testForm">
-				First name * <input type="text" name="firstName" required="" />
+				First name * <input type="text" name="firstName" id="firstName" required="" />
 				<br />
-				Surname * <input type="text" name="surname" required="" />
+				Surname * <input type="text" name="surname" id="surname" required="" />
 				<br />
-				Email address * <input type="email" name="emailAddress" required="" />
+				Email address * <input type="email" name="emailAddress" id="emailAddress" required="" />
 				<br />
-				Daytime contact number * <input type="tel" name="contactNumber" required="" />
+				Daytime contact number * <input type="tel" name="contactNumber" id="contactNumber" required="" />
 				<br />
-				Address * <input type="text" name="address" required="" />
+				Address * <input type="text" name="address" id="address" required="" />
 				<br />	
-				Suburb * <input type="text" name="suburb" required="" />
+				Suburb * <input type="text" name="suburb" id="suburb" required="" />
 				<br />
 				State * 
-				<select name="state" required="">
+				<select name="state" id="state" required="">
 					<option value="Select">Select</option>
 					<option value="ACT">ACT</option>
 					<option value="NSW">NSW</option>
@@ -49,27 +49,27 @@
 					<option value="WA">WA</option>
 				</select>
 				<br />
-				Postcode * <input type="text" name="postcode" required="" />
+				Postcode * <input type="text" name="postcode" id="postcode" required="" />
 				<br />				
 				Enquiry type *
-				<select name="enquiryType" required="">
+				<select name="enquiryType" id="enquiryType" required="">
 					<option value="Select">Select</option>
 					<option value="generalEnquiry">General Enquiry</option>
 					<option value="productFeedbackEnquiry">Product Feedback or Enquiry</option>
 					<option value="productComplaint">Product Complaint</option>
 				</select>
 				<br />
-				Product name <input type="text" name="productName" />
+				Product name <input type="text" name="productName" id="productName" />
 				<br />
-				Product size <input type="text" name="productSize" />
+				Product size <input type="text" name="productSize" id="productSize" />
 				<br />
-				Use-by date <input type="text" name="useByDate" />
+				Use-by date <input type="text" name="useByDate" id="useByDate" />
 				<br />
-				Batch code <input type="text" name="batchCode" />
+				Batch code <input type="text" name="batchCode" id="batchCode" />
 				<br />
 				Enquiry <textarea cols="40" rows="2" name="enquiry"></textarea>
 				<br />
-				<input type="submit" name="Submit" />
+				<input type="submit" name="Submit" id="submitForm" />
 
 			</form>
 
